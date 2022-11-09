@@ -43,9 +43,9 @@ main {
 }
 
 header {
+  background-color: #f4fcff;
   background-image: url(./images/bg-hero-mobile.svg);
   background-size: cover;
-  background-position: top center;
   text-align: center;
   background-repeat: no-repeat;
 }
@@ -77,6 +77,8 @@ header {
 }
 
 .nav-desc {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   font-family: 'Open Sans', sans-serif;
 }
@@ -100,4 +102,34 @@ header {
 
 .nav-img {
   margin-top: 3.5rem;
+}
+
+@media (min-width: 500px) {
+  main {
+    width: 100%;
+  }
+
+  .nav-desc {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .desc-headng {
+    text-align: left;
+    flex-basis: 50%;
+  }
+
+  .nav-desc h2 {
+    font-size: 2rem;
+  }
+
+  .nav-desc p {
+    font-size: 1rem;
+  }
+
+  .nav-img {
+    flex-basis: 50%;
+  }
 }
