@@ -45,6 +45,59 @@ main {
 header {
   background-image: url(./images/bg-hero-mobile.svg);
   background-size: cover;
+  background-position: top center;
   text-align: center;
   background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 1.5rem;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-btn {
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid transparent;
+  box-shadow: -2px 0px 3px 1px rgba(92, 88, 88, 0.75);
+  border-radius: 20px;
+  padding: 0.2rem 1rem;
+  font-size: 0.7rem;
+  background-color: #fff;
+}
+
+.nav-btn a {
+  color: var(--Very-Dark-Cyan);
+}
+
+.nav-desc {
+  gap: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-desc h2 {
+  font-size: 1.3rem;
+}
+
+.nav-desc p {
+  font-size: 1rem;
+  margin: 1.5rem 0;
+}
+
+.desc-btn a {
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.7rem 2.5rem;
+  font-size: 0.9rem;
+  background-color: var(--pink);
+}
+
+.nav-img {
+  margin-top: 2.5rem;
 }
